@@ -11,7 +11,7 @@
                         hover="text-primary"
                         @click="toView(v.name)"
                     >
-                        {{ v.label }}
+                        {{ v.file }}
                     </p>
                 </div>
             </a-collapse-panel>

@@ -37,12 +37,13 @@ result.forEach(item => {
     const { name } = item;
     item.children.forEach(child => {
         const { name: childName, relativePath: childRelativePath } = child;
+        const fileName = childName.replace('.vue', '');
         vueRoutes.push(`{
         dir: '${name}',
-        name: '${name}${childName}',
-        path: '${name}-${childName}',
-        file: '${childName}',
-        label: '${childName.replace('.vue', '').toLowerCase()}',
+        name: '${name}${fileName}',
+        path: '${name}-${fileName}',
+        file: '${fileName}',
+        label: '${fileName.toLowerCase()}',
         component: () => import('${childRelativePath}'),
     }`);
     });
