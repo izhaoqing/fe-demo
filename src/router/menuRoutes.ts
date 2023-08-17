@@ -11,6 +11,14 @@ export default [
     },
     {
         dir: 'CSS',
+        name: 'CSSMarqueeTag',
+        path: 'CSS-MarqueeTag',
+        file: 'MarqueeTag',
+        label: 'marqueetag',
+        component: () => import('@/views/CSS/MarqueeTag.vue'),
+    },
+    {
+        dir: 'CSS',
         name: 'CSSMask',
         path: 'CSS-Mask',
         file: 'Mask',
