@@ -40,5 +40,13 @@ export default [
         file: 'Task',
         label: 'task',
         component: () => import('@/views/JavaScript/Task.vue'),
+    },
+    {
+        dir: 'Vue',
+        name: 'VueTeleport',
+        path: 'Vue-Teleport',
+        file: 'Teleport',
+        label: 'teleport',
+        component: () => import('@/views/Vue/Teleport.vue'),
     }
 ]
