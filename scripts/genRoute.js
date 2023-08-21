@@ -9,7 +9,7 @@ function readDir(dir, relativePath = '@/views/') {
         const newRelativePath = path.join(relativePath, file);
         const stat = fs.statSync(fullPath);
 
-        if (stat.isDirectory()) {
+        if (stat.isDirectory() && !['layout', 'component', 'components'].includes(file)) {
             return readDir(fullPath, newRelativePath);
         } else if (stat.isFile() && path.extname(file) === '.vue') {
             return { name: file, relativePath: newRelativePath };
@@ -27,7 +27,7 @@ function readDir(dir, relativePath = '@/views/') {
 
 const vueFilesTree = readDir(path.resolve('./src/views'));
 const result = vueFilesTree.children.filter(child => {
-    return !['layout'].includes(child.name) && child.children?.length;
+    return child.children?.length;
 });
 console.log(JSON.stringify(result, null, 4));
 

@@ -43,6 +43,14 @@ export default [
     },
     {
         dir: 'Vue',
+        name: 'VueSuspense',
+        path: 'Vue-Suspense',
+        file: 'Suspense',
+        label: 'suspense',
+        component: () => import('@/views/Vue/Suspense.vue'),
+    },
+    {
+        dir: 'Vue',
         name: 'VueTeleport',
         path: 'Vue-Teleport',
         file: 'Teleport',
