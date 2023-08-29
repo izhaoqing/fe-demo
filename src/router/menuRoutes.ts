@@ -27,6 +27,14 @@ export default [
     },
     {
         dir: 'JavaScript',
+        name: 'JavaScriptAnimationApi',
+        path: 'JavaScript-AnimationApi',
+        file: 'AnimationApi',
+        label: 'animationapi',
+        component: () => import('@/views/JavaScript/AnimationApi.vue'),
+    },
+    {
+        dir: 'JavaScript',
         name: 'JavaScriptInputIME',
         path: 'JavaScript-InputIME',
         file: 'InputIME',
