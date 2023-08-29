@@ -63,7 +63,7 @@ const init = () => {
     }
     canScroll.value && start();
 };
-// watchEffect(init);
+false && watchEffect(init);
 </script>
 
 <style scoped lang="less">
