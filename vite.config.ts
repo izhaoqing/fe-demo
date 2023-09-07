@@ -14,6 +14,7 @@ import ImportIcons, { ImportIconsResolver } from 'vite-plugin-import-icons';
 export default (env: ConfigEnv) => {
     return defineConfig({
         server: {
+            port: 3390,
             // https://cn.vitejs.dev/config/#server-proxy
             proxy: {
                 '/mock': 'https://trsyapi.trscd.com.cn',
