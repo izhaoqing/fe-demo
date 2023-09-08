@@ -2,6 +2,14 @@
 /* eslint-disable */
 export default [
     {
+        dir: 'Animate',
+        name: 'AnimateGSAP',
+        path: 'Animate-GSAP',
+        file: 'GSAP',
+        label: 'gsap',
+        component: () => import('@/views/Animate/GSAP.vue'),
+    },
+    {
         dir: 'CSS',
         name: 'CSSBackground',
         path: 'CSS-Background',
