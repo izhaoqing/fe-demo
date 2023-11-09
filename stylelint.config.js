@@ -8,7 +8,7 @@ module.exports = {
         // https://windicss.org/features/directives.html
         'at-rule-no-unknown': [true, { ignoreAtRules: ['apply', 'variants', 'screen', 'layer'] }],
         // https://windicss.org/features/directives.html#theme
-        'function-no-unknown': [true, { ignoreFunctions: ['theme'] }],
+        'function-no-unknown': [true, { ignoreFunctions: ['theme', 'v-bind'] }],
         'declaration-no-important': null,
         'property-no-vendor-prefix': null,
     },

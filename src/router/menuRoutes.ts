@@ -19,6 +19,14 @@ export default [
     },
     {
         dir: 'CSS',
+        name: 'CSSBorderImage',
+        path: 'CSS-BorderImage',
+        file: 'BorderImage',
+        label: 'borderimage',
+        component: () => import('@/views/CSS/BorderImage.vue'),
+    },
+    {
+        dir: 'CSS',
         name: 'CSSMarqueeTag',
         path: 'CSS-MarqueeTag',
         file: 'MarqueeTag',
