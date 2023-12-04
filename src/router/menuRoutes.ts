@@ -66,6 +66,14 @@ export default [
         component: () => import('@/views/JavaScript/Task.vue'),
     },
     {
+        dir: 'JavaScript',
+        name: 'JavaScriptWaterfallListDemo',
+        path: 'JavaScript-WaterfallListDemo',
+        file: 'WaterfallListDemo',
+        label: 'waterfalllistdemo',
+        component: () => import('@/views/JavaScript/WaterfallListDemo.vue'),
+    },
+    {
         dir: 'Vue',
         name: 'VueSuspense',
         path: 'Vue-Suspense',
